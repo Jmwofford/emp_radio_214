@@ -1,3 +1,102 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+  background-color: lightgrey;
+}
+.home_button {
+  border: solid black;
+  width:20%;
+  height:35px;
+  border-radius: 35px;
+  padding:18px;
+  font-size:20px;
+  border:solid green;
+  justify-content:center;
+
+}
+.user_title{
+  font-size: 40px;
+  color: purple;
+  margin-left:35%;
+}
+.user_email{
+  font-size: 40px;
+  color: purple;
+  margin-top: 200px;
+}
+.spacing{
+  margin:25px;
+}
+.navBar{
+margin:10px;
+height:50px;
+width:95%;
+height: 170px;
+padding:7px;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+.radio_button{
+  margin-left:20%;
+}
+.nav_child{
+border: solid blue;
+border-width:.5px;
+background-color: lemonchiffon;
+padding: 15px;
+justify-content:space-around;
+margin:5px;
+border-radius:15px;
+font-size:25px;
+height:35px;
+text-decoration: none;
+}
+.nav_child:hover{
+  
+border: solid lemonchiffon;
+border-width:5px;
+background-color: lightgray;
+padding: 8px;
+justify-content:space-around;
+margin:5px;
+border-radius:15px;
+transition:2s;
+font-size:20px;
+}
+.test_mssg{
+margin-top:400px;
+
+}
+
+.main_login{
+  border: solid blue;
+  border-radius:35px;
+  padding:20px;
+  align-items:center;
+  width: 500px;
+  margin-left:30%;
+  font-size:22px;
+  margin-top:5%;
+  text-align:center;
+
+  border-width:2px;
+
+}
+.error_handle{
+  color: red;
+  font-size: 20px;
+}
+.main_login2{
+  // border: solid blue;
+  border-radius:35px;
+  padding-left:25px;
+  text-align:center;
+  width: 500px;
+  margin-left:30%;
+  font-size:48px;
+  margin-top:5%;
+}

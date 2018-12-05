@@ -5,5 +5,4 @@ Rails.application.routes.draw do
   # post '/sessions' => 'sessions#create'
   # post '/userss' => 'users#create'
   # get '/dashboard' => 'vm_module#index'
-
 end

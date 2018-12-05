@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VM Module Whisperer 3000</title>
+</head>
+<body>
+
+<br><br>
+    
+    <h1 class="main_login2"> Login/SignUp </h1>
+<div class="main_login">
+    <h4> Become A Certified Data_Ninja </h4>
+
+    <form action="/sessions" method="POST">
+      <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+      
+      <input type="name" name="login[name]" placeholder="Enter Name">
+      <input type="email" name="login[email]" placeholder="Enter Valid Email">
+      <input type="password" name="login[password]" placeholder="Create Password">
+      <input type="password" name="login[password_confirmation]" placeholder="Confirm Password">
+      <input type="submit" name="Submit" class="submit">
+    </form>
+
+  <div class = "errors">
+      <%if flash[:register_errors]%> 
+      <%flash[:register_errors].each do |error|%>
+      <p><%error%></>
+        <%end%>
+      <%end%>
+</div>
+ 
+<h4> Already that Ninja? Login </h4>
+
+<form action = "/vm_modules" method= "POST"> 
+    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+    <input type="email" name="login[email]" placeholder=" Enter Email ">
+    <input type="password" name="login[password]" placeholder=" Enter Password"> 
+    <input type="submit" name="submit" class="submit">
+</form>
+
+  <div class = "errors">
+      <%if flash[:login_errors]%> 
+      <%flash[:login_errors].each do |error|%>
+      <p class="error_handle"><%error%></>
+        <%end%>
+      <%end%>
+  </div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+</body>
+</html>
