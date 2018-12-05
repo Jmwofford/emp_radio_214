@@ -1,0 +1,2 @@
+class VmModuleController < ApplicationController
+end
