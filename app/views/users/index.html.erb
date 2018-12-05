@@ -14,13 +14,13 @@
 <div class="main_login">
     <h4> Become A Certified Data_Ninja </h4>
 
-    <form action="/sessions" method="POST">
+    <form action="/users" method="POST">
       <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
       
-      <input type="name" name="login[name]" placeholder="Enter Name">
-      <input type="email" name="login[email]" placeholder="Enter Valid Email">
-      <input type="password" name="login[password]" placeholder="Create Password">
-      <input type="password" name="login[password_confirmation]" placeholder="Confirm Password">
+      <input type="name" name="user[name]" placeholder="Enter Name">
+      <input type="email" name="user[email]" placeholder="Enter Valid Email">
+      <input type="password" name="user[password]" placeholder="Create Password">
+      <input type="password" name="user[password_confirmation]" placeholder="Confirm Password">
       <input type="submit" name="Submit" class="submit">
     </form>
 
@@ -34,7 +34,7 @@
  
 <h4> Already that Ninja? Login </h4>
 
-<form action = "/vm_modules" method= "POST"> 
+<form action = "/sessions" method= "POST"> 
     <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
     <input type="email" name="login[email]" placeholder=" Enter Email ">
     <input type="password" name="login[password]" placeholder=" Enter Password"> 
