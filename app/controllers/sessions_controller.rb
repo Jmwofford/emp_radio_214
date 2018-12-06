@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
     user = User.find_by(email:login_params[:email])
     if user && user.authenticate(login_params[:password])
       session[:user_id] = user.id
-      redirect_to '/dashboard'
+      redirect_to '/vm_modules'
     else
       flash[:login_errors] = ["Invalid Credentials, do Better fam! "]
       redirect_to '/'
@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
   end 
 
 def new 
-current_user = user.id
+   @user = User.new
 end
 
   private

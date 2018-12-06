@@ -1,6 +1,3 @@
-New session Created.. Hopefully @current_user is defined their info displays below
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,33 +7,51 @@ New session Created.. Hopefully @current_user is defined their info displays bel
   <title>VM Module Whisperer 3000</title>
 </head>
 <body>
+    
 
+<br><br>
+    
+    <h1 class="main_login2"> Login/SignUp </h1>
+<div class="main_login">
+    <h4> Become A Certified Data_Ninja </h4>
+    <form action="/users" method="POST">
+      <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+      <input type="name" name="user[name]" placeholder="Enter Name">
+      <input type="email" name="user[email]" placeholder="Enter Valid Email">
+      <input type="password" name="user[password]" placeholder="Create Password">
+      <input type="password" name="user[password_confirmation]" placeholder="Confirm Password">
+      <input type="submit" name="Create MyNinja" class="submit">
+    </form>
 
-   
-<div class="spacing">   
-  <h1 class="user_title"> Welcome </h1>
-    <div class="navBar">
-    <a href="https://www.visualmanager.com/site/5759/addmodule"><div class="nav_child">Create A Module in Visual Manager </div></a>
- <div class="radio_button">
-    <%= check_box_tag(:user_res) %>
-    <%= label_tag(:user_res, "FedEx Europe") %>
-    <%= check_box_tag(:res_user) %>
-    <%= label_tag(:res_user, "New User Module") %>
+  <div class = "errors">
+      <%if flash[:register_errors]%> 
+      <%flash[:register_errors].each do |error|%>
+      <p><%error%></>
+        <%end%>
+      <%end%>
 </div>
+  
+<h4> Already that Ninja? Login </h4>
 
-   <br><br>
-        <br><br>
-      <%= form_tag("/new", method: "get") do %>
-        <%= label_tag(:q, "Find VM Module By Name:") %>
-        <%= text_field_tag(:q) %>
-        <%= submit_tag("Locate Module") %>
-      <% end %>
+<form action = "/sessions" method= "POST"> 
+    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+    <input type="email" name="login[email]" placeholder=" Enter Email ">
+    <input type="password" name="login[password]" placeholder=" Enter Password"> 
+    <input type="submit" name="submit" class="submit">
+</form>
 
+  <div class = "errors">
+      <%if flash[:login_errors]%> 
+      <%flash[:login_errors].each do |error|%>
+      <p class="error_handle"><%error%></>
+        <%end%>
+      <%end%>
+  </div>
+</div> 
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 
-    <br><br><br>   
-    <a href="/"><div class="nav_child"> Return to Login/SignUp </div></a>
-    <a href="https://fischercompany-my.sharepoint.com/personal/ffischer_fischercompany_com/Documents/Forms/All.aspx?slrid=69cca89e-707e-7000-5e96-20eb33e0ba71&RootFolder=%2Fpersonal%2Fffischer_fischercompany_com%2FDocuments%2FRecordings%20-%20Pair%20Programming&FolderCTID=0x0120009BE551A94CE5C64BBCD109718471F1E7"><div class="nav_child"> Instuctions for Usage </div></a>
-</div>
 </body>
-
 </html>
