@@ -1,5 +1,11 @@
-<h1> Welcome <%= @current_user.name %>,</h1> 
 
- <h3>You are Currently Logged In as " <%= @current_user.email %> ". Wrong Email?     <%=link_to "Back", new_session_path%>
+<h1> Welcome <%= @current_user %>,</h1> 
+ 
+<h3>You are Currently Logged In as " <%= @current_user %> ". Wrong Email?     
+  Continue to User Show Page
 
+  maybe this page has not meaning
+  
 
+<%=link_to @current_user, new_session_path%>
+  

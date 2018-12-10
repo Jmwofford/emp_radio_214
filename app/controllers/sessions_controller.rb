@@ -4,16 +4,24 @@ class SessionsController < ApplicationController
     user = User.find_by(email:login_params[:email])
     if user && user.authenticate(login_params[:password])
       session[:user_id] = user.id
-      redirect_to '/vm_modules'
+      redirect_to '/', alert: "Currently Logged in"
     else
       flash[:login_errors] = ["Invalid Credentials, do Better fam! "]
-      redirect_to '/'
+      render "new"
     end
   end 
 
-def new 
-   @user = User.new
-end
+  def new 
+    if current_user == nil
+    @user = User.new
+    else redirect_to new_user_path
+    end
+  end
+
+  def destroy
+    session[:user_id] = nil
+    redirect_to new_user_path, alert: "Logged Out"
+  end
 
   private
   def login_params

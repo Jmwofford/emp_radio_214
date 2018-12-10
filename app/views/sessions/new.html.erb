@@ -12,6 +12,7 @@
 <br><br>
     
     <h1 class="main_login2"> Login/SignUp </h1>
+
 <div class="main_login">
     <h4> Become A Certified Data_Ninja </h4>
     <form action="/users" method="POST">
@@ -26,7 +27,7 @@
   <div class = "errors">
       <%if flash[:register_errors]%> 
       <%flash[:register_errors].each do |error|%>
-      <p><%error%></>
+      <p><%error%></h6>
         <%end%>
       <%end%>
 </div>
@@ -43,9 +44,10 @@
   <div class = "errors">
       <%if flash[:login_errors]%> 
       <%flash[:login_errors].each do |error|%>
-      <p class="error_handle"><%error%></>
+      <p class="error_handle"><%error%></a>
         <%end%>
       <%end%>
+
   </div>
 </div> 
 <script
