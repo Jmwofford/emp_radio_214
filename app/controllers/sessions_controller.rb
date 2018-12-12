@@ -12,15 +12,13 @@ class SessionsController < ApplicationController
   end 
 
   def new 
-    if current_user == nil
-    @user = User.new
-    else redirect_to new_user_path
-    end
+    current_user
+    redirect_to root_path if @current_user
   end
 
   def destroy
     session[:user_id] = nil
-    redirect_to new_user_path, alert: "Logged Out"
+    redirect_to new_session_path, alert: "Logged Out"
   end
 
   private

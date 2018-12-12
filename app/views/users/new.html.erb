@@ -9,9 +9,15 @@
 <body>
    
 <div class="spacing">   
+<%if @current_user %>
   <h1 class="user_title"> Welcome <%=@current_user.name%>, </h1>
+
   <h4 class = "user_subtitle">Got the wrong Ninja?  [Currently Logged User :  <%=@current_user.email%> ]</h4>
-  <%=link_to " => Sign Out", new_session_path%> <h3 class = "user_subtitle"> OR </h3> <%= link_to " => Return Login/Signup", new_session_path%> <br>
+
+  <%=link_to " => Sign Out", session_path("Log-out"),method: :delete %> <h3 class = "user_subtitle"> OR </h3> <%= link_to " => Return Login/Signup", new_session_path%> <br>
+
+<% end %>
+
   <h3 class = "user_subtitle"> <br>
   <%= form_tag("/new", method: "get") do %>
     <%= label_tag(:q, "Find VM Module By Name:") %>

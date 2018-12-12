@@ -1,11 +1,10 @@
 
-<h1> Welcome <%= @current_user %>,</h1> 
+<h1> You Are Now Logged In!! Greetings  <%= @current_user.name %>,</h1> 
  
-<h3>You are Currently Logged In as " <%= @current_user %> ". Wrong Email?     
-  Continue to User Show Page
-
-  maybe this page has not meaning
+<h3>Are you " <%= @current_user.email %> " ? .Wrong Email?  
+<br>   
+<%=link_to "Profile Page", new_user_path%>
   
 
-<%=link_to @current_user, new_session_path%>
+<%=link_to "Log-Out", session_path("Logout"), method: :delete%>
   
