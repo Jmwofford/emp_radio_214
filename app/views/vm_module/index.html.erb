@@ -1,40 +1,22 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>VM Module Whisperer 3000</title>
-</head>
-<body>
 
+
+
+
+
+
+
+<h1 class="vmh1"> You Are Now Logged In!! </h1>
+
+<img class="pose_ninja" src="https://uploads.ungrounded.net/alternate/903000/903466_alternate_25399_r1.zip/img/ninja.gif"> 
+
+<h2 class="ninja_greet"> <%= @current_user.name %>,</h2> 
+ 
+<br>   
   
-   
-<div class="spacing">   
-    <h1 class="user_title"> Welcome </h1>
-    <div class="navBar">
-    <a href="https://www.visualmanager.com/site/5759/addmodule"><div class="nav_child">Create A Module in Visual Manager </div></a>
- <div class="radio_button">
-    <%= check_box_tag(:user_res) %>
-    <%= label_tag(:user_res, "FedEx Europe") %>
-    <%= check_box_tag(:res_user) %>
-    <%= label_tag(:res_user, "New User Module") %>
-</div>
-
-   <br><br>
-        <br><br>
-      <%= form_tag("/new", method: "get") do %>
-        <%= label_tag(:q, "Find VM Module By Name:") %>
-        <%= text_field_tag(:q) %>
-        <%= submit_tag("Locate Module") %>
-      <% end %>
+<button class="button"><%=link_to "Log-Out", session_path("Logout"), method: :delete%></button>
 
 
-    <br><br><br>   
-    <a href="/"><div class="nav_child"> Return to Login/SignUp </div></a>
-    <a href="https://fischercompany-my.sharepoint.com/personal/ffischer_fischercompany_com/Documents/Forms/All.aspx?slrid=69cca89e-707e-7000-5e96-20eb33e0ba71&RootFolder=%2Fpersonal%2Fffischer_fischercompany_com%2FDocuments%2FRecordings%20-%20Pair%20Programming&FolderCTID=0x0120009BE551A94CE5C64BBCD109718471F1E7"><div class="nav_child"> Instuctions for Usage </div></a>
-</div>
-</body>
 
-</html>
+<button class="button"><%=link_to "Profile Page", new_user_path%></button>
+  

@@ -1,8 +1,8 @@
-Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  get '/' => 'users#index'
-  post '/sessions' => 'sessions#create'
-  post '/users' => 'users#create'
-  get '/dashboard' => 'vm_module#index'
+
+Rails.application.routes.draw do
+  root 'vm_module#index'
+  resources :users, only:[:create, :new]
+  resources :sessions, only:[:new, :create, :destroy]
+  resources :vm_module, only: [:create, :update, :new]
 end
