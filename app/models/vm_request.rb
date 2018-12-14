@@ -27,6 +27,6 @@ class VmRequest
     new_url = base_url + 'api/modules/' + "6989" + '/records/1'
     HTTP.auth("Bearer #{user_token}")
       .headers(cookie: full_auth_cookies, accept: 'application/json')
-      .put(new_url, json:{field_174508: "YUP !!"})
+      .put(new_url, json:{field_174508: "Just Switched"})
   end
 end
