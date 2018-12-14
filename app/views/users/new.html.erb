@@ -28,22 +28,17 @@
 
 
 <br>
- <form action="/vm_module" method="POST">
-      <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
-      <input type="email" name="vm_module[email]" placeholder="Field 1 Value">
-      <input type="password" name="vm_module[password]" placeholder="Field 2 Value">
-      <input type="submit" name="submit" class="submit">
-    </form>
 
 </div>
 <br>
 <div class = "user_subtitle">
- 
+
+  <%=link_to " => Retrieve Field Information from VM Module Num. 6989", vm_module_index_path("create"),method: :update %> 
+
 <button>Retrieve Field Information from VM Module Num. 6989</button>
 <br><br>
-
-  <h3>Field 1:</h3> <input id="module_name" name="module[name]" type="text" value= 'vm_info_retrieved'/>
-  <h3>Field 2:</h3> <input id="module_name" name="module[name]" type="text" value= 'vm_info_retrieved'/>
+  <h3>Field 1:</h3> <input id="module_name" name="module[name]" type="text" value= 'vm_info'/>
+  <h3>Field 2:</h3> <input id="module_name" name="module[name]" type="text" value= 'vm_info'/>
 <p>  =>  Will use method to send request, and get input field values from homepage.</p>
 <br><br>
     

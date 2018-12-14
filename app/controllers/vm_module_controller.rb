@@ -5,8 +5,12 @@ class VmModuleController < ApplicationController
   def index 
   end
 
+  def create 
+
+  end
+  
   def update
-    VmRequest.perform 
+    @perform = VmRequest.perform 
     redirect_to vm_modules_path
   end
   private 
