@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VM Module Whisperer 3000</title>
+</head>
+<body>
+   
+<div class="spacing">   
+<%if @current_user %>
+<img class= "ninja" src="https://www.drupal.org/files/user-pictures/picture-3007075-1470027662.gif">
+  <div class="snippet_parent">
+  <h1 class="user_glam" > Welcome <%=@current_user.name%>, </h1>
+  <h4 class = "user_subtitle2">Wrong Ninja?  [Currently Logged User :  <%=@current_user.email%> ]</h4>
+
+  <%=link_to " => Sign Out", session_path("Log-out"),method: :delete %> 
+  <hr>            
+ <%= link_to " => Return Login/Signup", new_session_path%> <br>
+</div>
+<% end %>
+
+
+<div class = "user_subtitle">
+<h2>Edit Field Value(s) for Module #6989</h2>
+<p>  => Will allow User to enter String and then send [string.value] as a post/put request to VM </p>
+
+
+<br>
+
+</div>
+<br>
+<div class = "user_subtitle">
+
+  <%=link_to " => Retrieve Field Information from VM Module Num. 6989", vm_module_index_path("create"),method: :perform%> 
+
+<br><br>
+  <h3>Field 1:</h3> <input id="module_name" name="module[name]" type="text" value= 'vm_info'/>
+  <h3>Field 2:</h3> <input id="module_name" name="module[name]" type="text" value= 'vm_info'/>
+<p>  =>  Will use method to send request, and get input field values from homepage.</p>
+<br><br>
+    
+<button>Add Info to Field [vm_modNum. 6989] </button>
+
+<input type="name" name="vm_module[name]" placeholder="Enter info to Edit">
+
+</div>
+
+        <a href="https://fischercompany-my.sharepoint.com/personal/ffischer_fischercompany_com/Documents/Forms/All.aspx?slrid=69cca89e-707e-7000-5e96-20eb33e0ba71&RootFolder=%2Fpersonal%2Fffischer_fischercompany_com%2FDocuments%2FRecordings%20-%20Pair%20Programming&FolderCTID=0x0120009BE551A94CE5C64BBCD109718471F1E7"><div class="nav_child"> Instuctions for Usage </div></a>
+   
+  </body>
+</html>

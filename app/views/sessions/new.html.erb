@@ -7,31 +7,33 @@
   <title>VM Module Whisperer 3000</title>
 </head>
 <body>
+    
 
 <br><br>
     
-    <h1 class="main_login2"> Login/SignUp </h1>
-<div class="main_login">
-    <h4> Become A Certified Data_Ninja </h4>
 
+<div class="main_login">
+    <h1 class="main_login2"> Login/SignUp </h1>
+    <h4> Become A Certified Data_Ninja </h4>
     <form action="/users" method="POST">
       <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
-      
       <input type="name" name="user[name]" placeholder="Enter Name">
       <input type="email" name="user[email]" placeholder="Enter Valid Email">
       <input type="password" name="user[password]" placeholder="Create Password">
       <input type="password" name="user[password_confirmation]" placeholder="Confirm Password">
-      <input type="submit" name="Submit" class="submit">
+      <input type="submit" name="Create MyNinja" class="submit">
     </form>
 
   <div class = "errors">
       <%if flash[:register_errors]%> 
       <%flash[:register_errors].each do |error|%>
-      <p><%error%></>
+      <p><%error%></h6>
         <%end%>
       <%end%>
 </div>
- 
+
+<img class="ninja_float"src="https://www.creditrepairninja.net/wp-content/uploads/2017/05/credit-ninja3.gif">
+  
 <h4> Already that Ninja? Login </h4>
 
 <form action = "/sessions" method= "POST"> 
@@ -44,11 +46,12 @@
   <div class = "errors">
       <%if flash[:login_errors]%> 
       <%flash[:login_errors].each do |error|%>
-      <p class="error_handle"><%error%></>
+      <p class="error_handle"><%error%></a>
         <%end%>
       <%end%>
+
   </div>
-</div>
+</div> 
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
