@@ -99,10 +99,6 @@ GEM
       domain_name (~> 0.5)
     http-form_data (2.1.1)
     http_parser.rb (0.6.0)
-<<<<<<< HEAD
-=======
-    http_parser.rb (0.6.0-java)
->>>>>>> c62d21a203c3f3f0161549941710d7296ea49b03
     i18n (1.2.0)
       concurrent-ruby (~> 1.0)
     io-like (0.3.0)
@@ -220,14 +216,7 @@ GEM
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
-<<<<<<< HEAD
     unf_ext (0.0.7.5)
-=======
-    unf (0.1.4-java)
-    unf_ext (0.0.7.5)
-    unf_ext (0.0.7.5-x64-mingw32)
-    unf_ext (0.0.7.5-x86-mingw32)
->>>>>>> c62d21a203c3f3f0161549941710d7296ea49b03
     web-console (3.7.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
