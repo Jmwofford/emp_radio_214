@@ -85,15 +85,33 @@ body {
 
 }
 
+.user_subtitle2 {
+  color: purple;
+  border: solid white;
+  background-color: lightgray;
+  border-radius: 15px;
+  border-width: 2px;
+  text-align: center;
+  padding: 10px;
+}
+
 .user_glam {
-  font-size: 60px;
-  color: lemonchiffon;
+  font-size: 40px;
+  color: purple;
+  border: solid white;
+  background-color: lightgray;
+  border-radius: 15px;
+  border-width: 2px;
+  text-align: center;
+  padding: 10px;
+
+
 }
 
 .snippet_parent {
   padding: 15px;
   margin-bottom: 20px;
-  margin-left: 40%;
+  font-size: 45px;
 }
 
 .test_mssg {
@@ -129,4 +147,13 @@ body {
   // margin-left:30%;
   font-size: 48px;
   margin-top: 5%;
+}
+
+.lash_logo {
+  border: double purple;
+  padding: 15px;
+  border-radius: 15px;
+  // margin-left: 30%;
+  width: auto;
+  // display: flex;
 }

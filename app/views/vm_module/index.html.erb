@@ -1,20 +1,23 @@
+<div class="mainContainer">
+
+    <h1 class="vmh1"> You Are Now Logged In!! </h1>
 
 
 
+<div class="lash_logo">
 
 
 
+    <h2 class="ninja_greet"> Welcome <%= @current_user.name %>,</h2> 
+    <hr>   
+      
+    <button class="button"><%=link_to "Log-Out", session_path("Logout"), method: :delete%></button>
+
+    <img class="lash_img" src="https://data.whicdn.com/images/214665260/original.gif">
+    
 
 
-<h1 class="vmh1"> You Are Now Logged In!! </h1>
-<img class="empower"src="https://thumbs.gfycat.com/PerkyIdolizedJuliabutterfly-size_restricted.gif">
-<h2 class="ninja_greet"> <%= @current_user.name %>,</h2> 
- 
-<br>   
-  
-<button class="button"><%=link_to "Log-Out", session_path("Logout"), method: :delete%></button>
-
-
-
-<button class="button"><%=link_to "Profile Page", new_user_path%></button>
+    <button class="button"><%=link_to "Profile Page", new_user_path%></button>
+  </div>
+</div>
   

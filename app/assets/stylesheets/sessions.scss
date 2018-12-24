@@ -68,3 +68,44 @@
   border-radius: 15px;
   background-color: yellow;
 }
+
+.video_screen {
+  border: double white;
+  color: white;
+  font-size: 12px;
+  font-family: cursive;
+  border-width: 4px;
+  padding: 35px;
+  height: 13em;
+  width: auto;
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/cd514331234507.564a1d2324e4e.gif")
+}
+
+.video_screen:hover {
+  border: double white;
+  border-width: 4px;
+  padding: 35px;
+  height: 16em;
+  width: auto;
+  background-image: url("https://images.askmen.com/news/entertainment/fisheye-lens_1397755780.jpg");
+  transition: 8s;
+
+}
+
+.genre_style_parent {
+  border: double white;
+  border-width: 5px;
+  padding: 10px;
+  background-color: lightblue;
+}
+
+.emp_logo {
+  // position: absolute;
+  margin: 0px;
+  width: auto;
+  height: 75px;
+}
+
+.vmh1 {
+  color: lightgray;
+}
