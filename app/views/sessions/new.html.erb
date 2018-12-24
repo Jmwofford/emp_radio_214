@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>VM Module Whisperer 3000</title>
+  <title>Empressiv Radio</title>
 </head>
 <body>
     
@@ -13,8 +13,9 @@
     
 
 <div class="main_login">
-    <h1 class="main_login2"> Login/SignUp </h1>
-    <h4> Become A Certified Data_Ninja </h4>
+    <h1 class="main_login2">Empressiv Member Sign-up </h1>
+    <hr>
+    <h4> Are You New To Empressiv? Sign-In !</h4>
     <form action="/users" method="POST">
       <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
       <input type="name" name="user[name]" placeholder="Enter Name">
@@ -32,9 +33,9 @@
       <%end%>
 </div>
 
-<img class="ninja_float"src="https://www.creditrepairninja.net/wp-content/uploads/2017/05/credit-ninja3.gif">
+<img class="ninja_float"src="https://thumbs.gfycat.com/PerkyIdolizedJuliabutterfly-size_restricted.gif">
   
-<h4> Already that Ninja? Login </h4>
+<h4> All My Day-ONES LogBackIn ! </h4>
 
 <form action = "/sessions" method= "POST"> 
     <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
@@ -43,6 +44,12 @@
     <input type="submit" name="submit" class="submit">
 </form>
 
+<%# .........stored random images %>
+<img class="ninja_float"src="https://thumbs.gfycat.com/LonelySecondaryAracari-size_restricted.gif">
+<%# queen....changed %>
+<img class="ninja_float"src="https://thumbs.gfycat.com/PerkyIdolizedJuliabutterfly-size_restricted.gif">
+<%# women empower %>
+  
   <div class = "errors">
       <%if flash[:login_errors]%> 
       <%flash[:login_errors].each do |error|%>
