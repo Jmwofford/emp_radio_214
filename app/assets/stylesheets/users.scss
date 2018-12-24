@@ -60,11 +60,10 @@ body {
 
 .ninja {
   position: absolute;
+  border: white;
 }
 
-.ninja_float {
-  margin: 5px;
-}
+
 
 .nav_child:hover {
 
@@ -102,7 +101,6 @@ body {
 }
 
 .main_login {
-  border: solid blue;
   border-radius: 35px;
   padding: 20px;
   align-items: center;
@@ -115,6 +113,7 @@ body {
   border-width: 2px;
 
 }
+
 
 .error_handle {
   color: red;

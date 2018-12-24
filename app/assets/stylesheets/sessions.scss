@@ -1,3 +1,70 @@
 // Place all the styles related to the Sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.empower {
+  width: 50px;
+  height: 100px;
+
+}
+
+.queen {
+  margin: 5px;
+  position: absolute;
+  width: 295px;
+}
+
+.genre_parent {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.genre_name {
+  border: solid white;
+  margin: 10px;
+  border-width: 2px;
+  text-align: center;
+  font-size: 22px;
+  padding: 15px;
+  width: auto;
+  border-radius: 15px;
+  background-color: pink;
+}
+
+.genre_name:hover {
+  border: solid white;
+  margin: 10px;
+  border-width: 2px;
+  text-align: center;
+  font-size: 22px;
+  padding: 15px;
+  width: auto;
+  border-radius: 15px;
+  background-color: green;
+}
+
+.genre_switch {
+  border: solid green;
+  margin: 2px;
+  border-width: .5px;
+  text-align: center;
+  font-size: 12px;
+  padding: 5px;
+  width: 85px;
+  border-radius: 15px;
+  background-color: purple;
+}
+
+.genre_switch:hover {
+  border: solid green;
+  margin: 2px;
+  border-width: .5px;
+  text-align: center;
+  font-size: 12px;
+  padding: 5px;
+  width: 85px;
+  border-radius: 15px;
+  background-color: yellow;
+}
