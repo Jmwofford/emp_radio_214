@@ -78,11 +78,23 @@ body {
   font-size: 20px;
 }
 
-.user_subtitle {
-  border: solid purple;
-  padding: 35px;
-  border-width: 1px;
+.radio_title {
+  text-align: center;
+  font-size: 90px;
+}
 
+.user_subtitle {
+  border: double purple;
+  padding: 35px;
+  border-width: 14px;
+  background-image: url("https://media.giphy.com/media/xnRilboCF81EY/giphy.gif");
+  transition: 8s;
+}
+
+.user_subtitle_new {
+  border: double purple;
+  padding: 35px;
+  border-width: 14px;
 }
 
 .user_subtitle2 {
@@ -152,6 +164,8 @@ body {
   border-radius: 50%;
   width: 60%;
   height: 30%;
+  background-image: url("https://media.giphy.com/media/xnRilboCF81EY/giphy.gif");
+  background-size: cover;
 }
 
 .subtitle_main {
@@ -168,6 +182,8 @@ input {
   margin: 2px;
   text-decoration: none;
   color: black;
+  background-image: url("https://media.giphy.com/media/xnRilboCF81EY/giphy.gif");
+  background-size: cover;
 }
 
 input:hover {
@@ -209,7 +225,8 @@ input:hover {
   margin-left: 20%;
   width: 60%;
   height: 30%;
-
+  background-image: url("https://media.giphy.com/media/xnRilboCF81EY/giphy.gif");
+  background-size: cover;
 }
 
 .girl_text {

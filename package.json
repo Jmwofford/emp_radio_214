@@ -1,5 +1,7 @@
 {
   "name": "vm_test_module",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
