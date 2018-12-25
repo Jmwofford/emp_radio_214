@@ -79,7 +79,7 @@ body {
 }
 
 .user_subtitle {
-  border: solid white;
+  border: solid purple;
   padding: 35px;
   border-width: 1px;
 
@@ -87,7 +87,7 @@ body {
 
 .user_subtitle2 {
   color: purple;
-  border: solid white;
+  border: solid purple;
   background-color: lightgray;
   border-radius: 15px;
   border-width: 2px;
@@ -98,8 +98,7 @@ body {
 .user_glam {
   font-size: 40px;
   color: purple;
-  border: solid white;
-  background-color: lightgray;
+  border: solid purple;
   border-radius: 15px;
   border-width: 2px;
   text-align: center;
@@ -122,15 +121,64 @@ body {
   border-radius: 35px;
   padding: 20px;
   align-items: center;
-  width: 500px;
+  width: auto;
   font-size: 22px;
   margin-top: 5%;
   text-align: center;
+  border: solid purple;
+  border-width: 5px;
+  margin-left: 13%;
+  height: 50%;
 
-  border-width: 2px;
 
 }
 
+.main_login2 {
+  border-radius: 35px;
+  padding: 20px;
+  width: auto;
+  font-size: 12px;
+  margin-top: 5%;
+  text-align: center;
+  border-width: 2px;
+  height: 50%;
+  color: white;
+}
+
+.hair_pic {
+  // height: 275px;
+  border: double purple;
+  border-width: 15px;
+  border-radius: 50%;
+  width: 60%;
+  height: 30%;
+}
+
+.subtitle_main {
+  border: solid white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 25px;
+}
+
+input {
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 2px;
+  text-decoration: none;
+  color: black;
+}
+
+input:hover {
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 2px;
+  text-decoration: none;
+  background-color: lightcoral;
+  color: white;
+}
 
 .error_handle {
   color: red;

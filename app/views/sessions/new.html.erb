@@ -13,9 +13,9 @@
     
 
 <div class="main_login">
-    <h1 class="main_login2">Empressiv Member Sign-up </h1>
+    <h1 class="subtitle_main">Empressiv Member Sign-up </h1><img class="hair_pic"src="https://i.pinimg.com/originals/0f/1c/8d/0f1c8ddcc72c2a4a5a507463e754c306.gif">
     <hr>
-    <h4> Are You New To Empressiv? Sign-In !</h4>
+    <h4 class="subtitle_main"> Are You New To Empressiv? Sign-In !</h4>
     <form action="/users" method="POST">
       <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
       <input type="name" name="user[name]" placeholder="Enter Name">
@@ -33,9 +33,10 @@
       <%end%>
 </div>
 
-<%# <img class="ninja_float"src="https://thumbs.gfycat.com/PerkyIdolizedJuliabutterfly-size_restricted.gif"> %>
-  
-<h4> All My Day-ONES LogBackIn ! </h4>
+<%# <img class="ninja_float"src="https://media.giphy.com/media/WgQugKp44lW39KbNLw/giphy_s.gif"> %>
+
+  <%#Black Queen Logo  %>
+<h4 class="subtitle_main"> All My Day-ONES LogBackIn ! </h4>
 
 <form action = "/sessions" method= "POST"> 
     <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
