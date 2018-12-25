@@ -45,18 +45,6 @@ body {
   ;
 }
 
-.nav_child {
-  border: solid blue;
-  border-width: .5px;
-  background-color: lemonchiffon;
-  padding: 15px;
-  justify-content: space-around;
-  margin: 5px;
-  border-radius: 15px;
-  font-size: 25px;
-  height: 35px;
-  text-decoration: none;
-}
 
 .ninja {
   position: absolute;
@@ -179,8 +167,11 @@ body {
 
 input {
   font-size: 15px;
+  font-family: serif;
   padding: 15px;
+  border: solid purple;
   border-radius: 10px;
+  border-width: 4px;
   margin: 2px;
   text-decoration: none;
   color: black;
