@@ -1,23 +1,26 @@
 <div class="mainContainer">
 
-    <h1 class="vmh1"> You Are Now Logged In!! </h1>
+    <h1 class="vmh1"> You Are Now Logged In !   </h1>
 
 
+  
+   <img class="lash_img" src="https://data.whicdn.com/images/214665260/original.gif">
+    <hr>
+    <div class="girl_text">
+    <h2>Hey <%=@current_user.name%>,</h2>
+    <p> I hope you are ready to be EmpressED ! I am the Founder of the Empressiv Hair Company and would like to personally invite you to your personal Members Page. You now have the ability to access online appointments, as well as a few other new features. Keep your eye out for our Newsletter! Click into your Profile to Continue. </p>
+    </div>
+<div class="button_parent">
 
-<div class="lash_logo">
+            <button class="button"><%=link_to "Log-Out", session_path("Logout"), method: :delete%></button>
 
+            <hr>
 
-
-    <h2 class="ninja_greet"> Welcome <%= @current_user.name %>,</h2> 
-    <hr>   
-      
-    <button class="button"><%=link_to "Log-Out", session_path("Logout"), method: :delete%></button>
-
-    <img class="lash_img" src="https://data.whicdn.com/images/214665260/original.gif">
+            <button class="button"><%=link_to "Profile Page", new_user_path%></button>
+          
     
-
-
-    <button class="button"><%=link_to "Profile Page", new_user_path%></button>
-  </div>
+    </div>
+    <hr>
+    
 </div>
   

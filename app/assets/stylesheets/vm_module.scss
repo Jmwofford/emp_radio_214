@@ -1,6 +1,10 @@
 // Place all the styles related to the VM_Module controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  padding: 10px;
+}
+
 .vmh1 {
   color: white;
   font-size: 60px;
@@ -20,24 +24,26 @@
 }
 
 .ninja_greet {
-  font-family: cursive;
-  font-size: 85px;
-  // margin-left: 40%;
-  // position: absolute;
-  border: solid pink;
-  border-radius: 50%;
+  font-size: 65px;
+  position: absolute;
+  border: solid purple;
+  border-radius: 15px;
   padding: 20px;
   text-align: center;
+  color: white;
+  font-family: serif;
 
 
 }
 
+.button_parent {
+  display: flex;
+}
+
 .button {
-  font-size: 15px;
-  padding: 5px;
-  background-color: pink;
-  border: solid white;
+  font-size: 25px;
+  padding: 15px;
+  border: double purple;
   border-radius: 10px;
   margin-left: 3%;
-
 }
