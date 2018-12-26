@@ -13,7 +13,15 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree .
-//= require jquery3
-//= require jquery_ujs
-//= require_tree .
+// = require_tree .
+// = require jquery3
+// = require jquery_ujs
+// = require_tree .
+
+$(document).ready(function () {
+  console.log("-Jquery connected- ")
+});
+
+$('input').on("click", function () {
+  alert("The paragraph was clicked.");
+});

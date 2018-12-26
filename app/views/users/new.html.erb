@@ -9,8 +9,6 @@
   <%=@current_user.name%>, </h1>
   <%=button_to " Sign Out of All Accounts", session_path("Log-out"),method: :delete %> 
   
-
-      
   <hr>       
 </div>
 <% end %>
@@ -18,42 +16,52 @@
 
 <div class = "user_subtitle_new">
 <hr>
-<div class="video_screen"> Song.name </div>
 
-<hr>
-<%# radioParent %>
+<iframe class="video_main" controls autoplay src="https://www.youtube.com/embed?v=N1yGG8jMSTI&list=RDN1yGG8jMSTI&start_radio=1"></iframe>
 
-<div class="genre_parent">
+    <div class="genre_parent">
+    <%=button_to " Click To Update VideoURL", vm_module_index_path("create"),method: :perform%> 
+    <div class="genre_style_parent">
+        <button class="genre_name">Love </button>
+            <button class="genre_switch">ON/OFF</button>
 
-  <div class="genre_style_parent">
-      <button class="genre_name">Love </button>
-          <button class="genre_switch">ON/OFF</button>
+        <button class="genre_name">Island </button>
+            <button class="genre_switch">ON/OFF</button>
 
-      <button class="genre_name">Island </button>
-          <button class="genre_switch">ON/OFF</button>
+        <button class="genre_name">NYC </button>
+            <button class="genre_switch">ON/OFF</button>
 
-      <button class="genre_name">NYC </button>
-          <button class="genre_switch">ON/OFF</button>
+        <button class="genre_name">Cali </button>
+            <button class="genre_switch">ON/OFF</button>
 
-      <button class="genre_name">Cali </button>
-          <button class="genre_switch">ON/OFF</button>
+        <button class="genre_name"> 420  </button>
+            <button class="genre_switch">ON/OFF</button>
 
-      <button class="genre_name"> 420  </button>
-          <button class="genre_switch">ON/OFF</button>
+        <button class="genre_name">90s Classics
+            <button class="genre_switch">ON/OFF</button>
 
-      <button class="genre_name">90s Classics
-          <button class="genre_switch">ON/OFF</button>
-
-      <button class="genre_name">Instrumentals</button>
-          <button class="genre_switch">ON/OFF</button>
-
-  </div>          
-</div>
+        <button class="genre_name">Instrumentals</button>
+            <button class="genre_switch">ON/OFF</button>
+        </div>          
+    </div>
 </div>
 <br>
 <div class = "user_subtitle">
-<img class="queen"src="https://thumbs.gfycat.com/LonelySecondaryAracari-size_restricted.gif">
-<%# queen....changed %>
-</div>
+    <img class="queen"src="https://thumbs.gfycat.com/LonelySecondaryAracari-size_restricted.gif">
+    </div>
+
+    <img src="https://media.giphy.com/media/5h0pq1i0odYngcedQ3/giphy.gif">
+
+    <img src="https://thumbs.gfycat.com/WellmadeHeartyHog-small.gif">
+
+
+    <img src="http://4.bp.blogspot.com/-nbeZDZWneqo/Ufn4-XBXDLI/AAAAAAAAA4A/LWK9JJADHlo/s1600/tumblr_mod5rpi95m1qf2qcpo1_500.gif">
+
+    <img src="https://media.giphy.com/media/8mzhcmWskIFDYeA2qm/source.gif">
+
+
+    <img src="https://33.media.tumblr.com/6e880fdd2478389ef13a9e6d71d70798/tumblr_mjxftbX6Ul1rgpyeqo1_500.gif">
+    <img src="http://business360success.com/wp-content/uploads/2017/10/increase-business-value-003.gif">
+    </div>
    
   </body>

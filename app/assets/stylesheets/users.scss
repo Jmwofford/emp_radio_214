@@ -98,11 +98,12 @@ body {
 .user_glam {
   font-size: 40px;
   color: purple;
-  border: solid purple;
+  border: double purple;
   border-radius: 15px;
-  border-width: 2px;
+  border-width: 5px;
   text-align: center;
   padding: 10px;
+  margin-top: 5px;
 
 
 }
@@ -132,6 +133,17 @@ body {
 
 }
 
+.video_main {
+  width: 60%;
+  height: auto;
+  border-radius: 10px;
+  border: solid purple;
+  border-width: 4px;
+  margin: 12px;
+  padding: 10px;
+  margin-left: 20%;
+}
+
 .main_login2 {
   border-radius: 35px;
   padding: 20px;
@@ -153,6 +165,7 @@ body {
   height: 30%;
   background-image: url("https://media.giphy.com/media/xnRilboCF81EY/giphy.gif");
   background-size: cover;
+  margin-left: 20%';'
 }
 
 .subtitle_main {
