@@ -14,6 +14,15 @@ class UsersController < ApplicationController
   def new
     @user = User.new
     current_user
+    @love_urls = EdgeControl::LOVE_GENRE
+    @island_urls = EdgeControl::ISLAND_GENRE
+    @nyc_urls = EdgeControl::NYC_GENRE
+    @cali_urls = EdgeControl::CALI_GENRE
+    @four20_urls = EdgeControl::FOUR20_GENRE
+    @nines_urls = EdgeControl::NINES_GENRE
+
+
+
   end
 
   # def show

@@ -22,26 +22,47 @@
     <div class="genre_parent">
     <%=button_to " Click To Update VideoURL", vm_module_index_path("create"),method: :perform%> 
     <div class="genre_style_parent">
+
         <button class="genre_name">Love </button>
-            <button class="genre_switch">ON/OFF</button>
+
+        <% @love_urls.each do |url|%>
+
+        <iframe src="<%= url %>" controls autoplay></iframe>
+
+        <% end %>
 
         <button class="genre_name">Island </button>
-            <button class="genre_switch">ON/OFF</button>
 
+        <% @island_urls.each do |url|%>
+
+        <iframe src="<%= url %>" controls autoplay></iframe>
+
+        <% end %>
         <button class="genre_name">NYC </button>
-            <button class="genre_switch">ON/OFF</button>
+          <% @nyc_urls.each do |url|%>
+
+        <iframe src="<%= url %>" controls autoplay></iframe>
+
+        <% end %>
 
         <button class="genre_name">Cali </button>
-            <button class="genre_switch">ON/OFF</button>
+        <% @cali_urls.each do |url|%>
 
+        <iframe src="<%= url %>" controls autoplay></iframe>
+
+        <% end %>
         <button class="genre_name"> 420  </button>
-            <button class="genre_switch">ON/OFF</button>
+        <% @four20_urls.each do |url|%>
 
+        <iframe src="<%= url %>" controls autoplay></iframe>
+
+        <% end %>
         <button class="genre_name">90s Classics
-            <button class="genre_switch">ON/OFF</button>
+          <% @love_urls.each do |url|%>
 
-        <button class="genre_name">Instrumentals</button>
-            <button class="genre_switch">ON/OFF</button>
+        <iframe src="<%= url %>" controls autoplay></iframe>
+
+        <% end %>
         </div>          
     </div>
 </div>
